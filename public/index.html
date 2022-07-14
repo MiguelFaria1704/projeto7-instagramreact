@@ -3,10 +3,385 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>React App</title>
+    <title>projeto7-instagramreact</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="root"></div>
-  </body>
+
+<body>
+  <div class="root">
+        <div class="menu">
+            <div>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <div class="vertical-line"></div>
+                <a href="https://www.instagram.com/"><img src="./images/logo.png" /></a>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Pesquisar" required>
+            </div>
+
+            <div>
+                <a href="https://www.instagram.com/direct/inbox/"><ion-icon name="paper-plane-outline"></ion-icon></a>
+                <a href="https://www.instagram.com/explore/"><ion-icon name="compass-outline"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="heart-outline"></ion-icon></a>
+                <a href="https://www.instagram.com/catanacomics"><ion-icon name="person-outline"></ion-icon></a>
+            </div>
+        </div>
+    
+        <div class="menu-mobile">
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+            
+            <a href="https://www.instagram.com/"><img src="./images/logo.png" /></a>
+
+            <a href="https://www.instagram.com/direct/inbox/"><ion-icon name="paper-plane-outline"></ion-icon></a>
+        </div>
+    </div>
+
+     
+    <div class="content">
+        <div>
+            <div class="stories-box">
+                <div>
+                    <img src="./images/stories_background.jpg" />
+                    <div>
+                        <a href="https://www.instagram.com/stories/9gag/">
+                        <img src="./images/accounts/9gag.jpg" />
+                        </a>
+                    </div>
+                    <a href="https://www.instagram.com/stories/9gag/">9gag</a>
+                </div>
+
+                <div>
+                    <img src="./images/stories_background.jpg" />
+                    <div>
+                        <a href="https://www.instagram.com/stories/meowed/">
+                        <img src="./images/accounts/meowed.png" />
+                        </a>
+                    </div>
+                    <a href="https://www.instagram.com/stories/meowed/">meowed</a>
+                </div>
+
+                <div>
+                    <img src="./images/stories_background.jpg" />
+                    <div>
+                        <a href="https://www.instagram.com/stories/barked/">
+                        <img src="./images/accounts/barked.png" />
+                        </a>
+                    </div>
+                    <a href="https://www.instagram.com/stories/barked/">barked</a>
+                </div>
+
+                <div>
+                    <img src="./images/stories_background.jpg" />
+                    <div>
+                        <a href="https://www.instagram.com/stories/nathanwpylestrangeplanet/">
+                        <img src="./images/accounts/nathanwpylestrangeplanet.png" />
+                        </a>
+                    </div>
+                    <a href="https://www.instagram.com/stories/nathanwpylestrangeplanet/">nathanwpylestrangeplanet</a>
+                </div>
+
+                <div>
+                    <img src="./images/stories_background.jpg" />
+                    <div>
+                        <a href="https://www.instagram.com/stories/wawawiwacomics/">
+                        <img src="./images/accounts/wawawiwacomics.png" />
+                        </a>
+                    </div>
+                    <a href="https://www.instagram.com/stories/wawawiwacomics/">wawawiwacomics</a>
+                </div>
+
+                <div>
+                    <img src="./images/stories_background.jpg" />
+                    <div>
+                        <a href="https://www.instagram.com/stories/respondeai/">
+                        <img src="./images/accounts/respondeai.png" />
+                        </a>
+                    </div>
+                    <a href="https://www.instagram.com/stories/respondeai/">respondeai</a>
+                </div>
+
+                <div>
+                    <img src="./images/stories_background.jpg" />
+                    <div>
+                        <a href="https://www.instagram.com/stories/filomoderna/">
+                        <img src="./images/accounts/filomoderna.jpg" />
+                        </a>
+                    </div>
+                    <a href="https://www.instagram.com/stories/filomoderna/">filomoderna</a>
+                </div>
+               
+                <div>
+                    <img src="./images/stories_background.jpg" />
+                    <div>
+                        <a href="https://www.instagram.com/stories/memeriago/">
+                        <img src="./images/accounts/memeriago.jpg" />
+                        </a>
+                    </div>
+                    <a href="https://www.instagram.com/stories/memeriago/">memeriago</a>
+                </div>
+
+                <button><ion-icon name="chevron-forward-circle"></ion-icon></button>
+               
+            </div>
+
+            <div class="posts-column">
+                <div>
+                    <div>
+                        <div>
+                            <a href="https://www.instagram.com/meowed/">
+                                <img src="./images/accounts/meowed.png" alt="Profile Image">
+                                <h1>meowed</h1>            
+                            </a>
+                        </div>
+
+                        <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+                    </div>
+
+                    <img src="./images/cat.png" alt="Post Image">
+
+                    <div>
+                        <div>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                            <button><ion-icon name="chatbubble-outline"></ion-icon></button>
+                            <button><ion-icon name="paper-plane-outline"></ion-icon></button>
+                        </div>
+                        <button><ion-icon name="bookmark-outline"></ion-icon></button>
+                    </div>
+
+                    <div>
+                        <img src="./images/accounts/respondeai.png" alt="Profile interaction">
+                        <p>Curtido por <a href="https://www.instagram.com/respondeai/">respondeai</a> e <strong>outras 101.523 pessoas</strong></p>
+                    </div>
+
+                    <div class="comments">
+                        <a href="https://www.instagram.com/">Veja todos os 108 comentários</a>
+
+                        <div>
+                            <div><a href="https://www.instagram.com/meowed/">meowed</a><p>Are they posting my pictures again?</p></div>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+
+                        <div>
+                            <button><ion-icon name="happy-outline"></ion-icon></button>
+                            <input type="text" placeholder="Adicionar comentário" required><input type="submit" value="Postar">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div>
+                            <a href="https://www.instagram.com/barked/">
+                                <img src="./images/accounts/barked.png" alt="Profile Image">
+                                <h1>barked</h1>            
+                            </a>
+                        </div>
+
+                        <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+                    </div>
+
+                    <img src="./images/doginho.png" alt="Post Image">
+
+                    <div>
+                        <div>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                            <button><ion-icon name="chatbubble-outline"></ion-icon></button>
+                            <button><ion-icon name="paper-plane-outline"></ion-icon></button>
+                        </div>
+                        <button><ion-icon name="bookmark-outline"></ion-icon></button>
+                    </div>
+
+                    <div>
+                        <img src="./images/accounts/adorable_animals.png" alt="Profile interaction">
+                        <p>Curtido por <a href="https://www.instagram.com/adorable_animals/">adorable_animals</a> e <strong>outras 99.159 pessoas</strong></p>
+                    </div>
+
+                    <div class="comments">
+                        <a href="https://www.instagram.com/">Veja todos os 96 comentários</a>
+
+                        <div>
+                            <div><a href="https://www.instagram.com/barked/">barked</a><p>How cute am I?</p></div>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        
+                        <div>
+                            <div><a href="https://www.instagram.com/barked/">barked</a><p>Who doesn't love a puppy?</p></div>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+
+                        <div>
+                            <button><ion-icon name="happy-outline"></ion-icon></button>
+                            <input type="text" placeholder="Adicionar comentário" required><input type="submit" value="Postar">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div>
+                            <a href="https://www.instagram.com/adorable_animals/">
+                                <img src="./images/accounts/adorable_animals.png" alt="Profile Image">
+                                <h1>adorable_animals</h1>            
+                            </a>
+                        </div>
+
+                        <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+                    </div>
+
+                    <div id="video">
+                        <video controls autoplay>
+                            <source src="videos/video.mp4" type="video/mp4" />
+                            <source src="videos/video.ogv" type="video/ogg" />
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+
+                    <div>
+                        <div>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                            <button><ion-icon name="chatbubble-outline"></ion-icon></button>
+                            <button><ion-icon name="paper-plane-outline"></ion-icon></button>
+                        </div>
+                        <button><ion-icon name="bookmark-outline"></ion-icon></button>
+                    </div>
+
+                    <div>
+                        <img src="./images/accounts/meowed.png" alt="Profile interaction">
+                        <p>Curtido por <a href="https://www.instagram.com/meowed/">meowed</a> e <strong>outras 80.351 pessoas</strong></p>
+                    </div>
+
+                    <div class="comments">
+                        <a href="https://www.instagram.com/">Veja todos os 79 comentários</a>
+
+                        <div>
+                            <div><a href="https://www.instagram.com/adorable_animals/">adorable_animals</a><p>"Excuse me"</p></div>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+
+                        <div>
+                            <button><ion-icon name="happy-outline"></ion-icon></button>
+                            <input type="text" placeholder="Adicionar comentário" required><input type="submit" value="Postar">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div>
+                <a href="https://www.instagram.com/catanacomics/"><img src="./images/accounts/catanacomics.webp" alt="My profyle"></a>
+                <div>
+                    <a href="https://www.instagram.com/catanacomics/">catanacomics</a>
+                    <p>Catana</p>
+                </div>
+            </div>
+
+            <div>
+                <p>Sugestões para você</p>
+                <a href="https://www.instagram.com/explore/people/">Ver tudo</a>
+            </div>
+
+            <div>
+                <div>
+                    <a href="https://www.instagram.com/bad.vibes.memes/"><img src="./images/accounts/bad-vibes-memes.png" alt="Profile picture"></a>
+                    <div>
+                        <a href="https://www.instagram.com/bad.vibes.memes/">bad.vibes.memes</a>
+                        <p>Segue você</p>
+                    </div>
+                </div>
+                <button class="follow">Seguir</button>
+            </div>
+
+            <div>
+                <div>
+                    <a href="https://www.instagram.com/chibirdart/"><img src="./images/accounts/chibirdart.png" alt="Profile picture"></a>
+                    <div>
+                        <a href="https://www.instagram.com/chibirdart/">chibirdart</a>
+                        <p>Segue você</p>
+                    </div>
+                </div>
+                <button class="follow">Seguir</button>
+            </div>
+
+            <div>
+                <div>
+                    <a href="https://www.instagram.com/razoesparaacreditar/"><img src="./images/accounts/razoesparaacreditar.jpg" alt="Profile picture"></a>
+                    <div>
+                        <a href="https://www.instagram.com/razoesparaacreditar/">razoesparaacreditar</a>
+                        <p>Novo no Instagram</p>
+                    </div>
+                </div>
+                <button class="follow">Seguir</button>
+            </div>
+
+            <div>
+                <div>
+                    <a href="https://www.instagram.com/adorable_animals/"><img src="./images/accounts/adorable_animals.png" alt="Profile picture"></a>
+                    <div>
+                        <a href="https://www.instagram.com/adorable_animals/">adorable_animals</a>
+                        <p>Segue você</p>
+                    </div>
+                </div>
+                <button class="follow">Seguir</button>
+            </div>
+
+            <div>
+                <div>
+                    <a href="https://www.instagram.com/smallcutecats/"><img src="./images/accounts/smallcutecats.png" alt="Profile picture"></a>
+                    <div>
+                        <a href="https://www.instagram.com/smallcutecats/">smallcutecats</a>
+                        <p>Segue você</p>
+                    </div>
+                </div>
+                <button class="follow">Seguir</button>
+            </div>
+
+            <div>
+                <a href="https://about.instagram.com/">Sobre</a>
+                <p> --- </p>
+                <a href="https://help.instagram.com/">Ajuda</a>
+                <p> • </p>
+                <a href="https://about.instagram.com/blog">Imprensa</a>
+                <p> • </p>
+                <a href="https://developers.facebook.com/docs/instagram">API</a>
+                <p> • </p>
+                <a href="https://about.instagram.com/about-us/careers">Carreiras</a>
+                <p> • </p>
+                <a href="https://help.instagram.com/519522125107875/?maybe_redirect_pol=0">Privacidade</a>
+                <p> • </p>
+                <a href="https://help.instagram.com/581066165581870">Termos</a>
+                <p> • </p>
+                <a href="https://www.instagram.com/explore/locations/">Localizações</a>
+                <p> • </p>
+                <a href="https://www.instagram.com/">Contas mais relevantes</a>
+                <p> • </p>
+                <a href="https://www.instagram.com/">Hashtags</a>
+                <p> • </p>  
+                <button>Idioma</button>
+            </div>
+
+            <div>
+                <p>© 2021 INSTAGRAM DO FACEBOOK</p>
+            </div>
+            
+        </div>
+    
+    </div>
+
+    <div class="bottom-bar">
+        <a href="https://www.instagram.com/"><ion-icon name="home"></ion-icon></a>
+        <button><ion-icon name="search-outline"></ion-icon></button>
+        <button><ion-icon name="add-circle-outline"></ion-icon></button>
+        <button><ion-icon name="heart-outline"></ion-icon></button>
+        <a href="https://www.instagram.com/catanacomics"><ion-icon name="person-outline"></ion-icon></a>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
 </html>

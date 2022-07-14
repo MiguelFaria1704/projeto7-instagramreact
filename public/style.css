@@ -1,0 +1,566 @@
+div {
+    box-sizing:border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+body > div:first-child {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-color: #DBDBDB;
+    border-width: 0 0 1px 0;;
+    z-index: 2;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu {
+    width: 935px;
+    height: 54px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ion-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.menu img {
+    height: 29px;
+    width: auto;
+}
+
+.menu p {
+    color: #979797;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.menu input {
+    width: 215px;
+    height: 28px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #DBDBDB;
+    border-width: 1px;
+    background-color: #FAFAFA;
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.menu > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.menu > div:first-child {
+    width: 146px;
+    margin-top: 15px;
+}
+
+.menu > div:last-child {
+    width: 148px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 935px;
+    margin-top: 88px;
+}
+
+.content h1 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+}
+
+.content a {
+    font-weight: 500;
+}
+
+.stories-box {
+    width: 614px;
+    height: 118px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #DBDBDB;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 9px;
+    margin-bottom: 24px;
+    position: relative;
+   
+}
+
+.stories-box ion-icon {
+    position: absolute;
+    right: 5px;
+    top: 43px;
+    font-size: 32px;
+    color: white;
+    z-index: 1;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
+}
+
+.stories-box > div {
+    position: relative;
+    top: 0px;
+    left:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 84px;
+}
+
+.stories-box > div > img {
+    border-radius: 50%;
+    width: 66px;
+}
+
+.stories-box > div > a {
+    margin: 4px 1px 0 1px;
+    width: 78px;
+}
+.stories-box > div > div {
+    position: absolute;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stories-box > div > div img {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+}
+
+.stories-box a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    color: #262626;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.posts-column p {
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 400;
+}
+
+.posts-column div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts-column > div {
+    width: 614px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #DBDBDB;
+}
+
+.posts-column > div > div ion-icon {
+    font-size: 16px;
+    color: #262626;
+    margin-right: 17px;
+}
+
+.posts-column > div > div:nth-child(3) {
+    margin: 0 10px;
+}
+
+.posts-column > div > div:nth-child(3) ion-icon {
+    font-size: 22px;
+    color: #262626;
+    margin: 10px 7px 10px 7px;
+}
+
+.posts-column > div > div:nth-child(3) ion-icon:hover {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.posts-column > div > div:nth-child(4){
+   justify-content: left;
+   align-items: center;
+   margin-bottom: 14px;
+}
+
+
+.posts-column > div > div:nth-child(4) img {
+    width: 20px;
+    margin: 0 5px 0 17px;
+}
+
+.posts-column > div > div > div a {
+    display: flex;
+    align-items: center;
+}
+
+.posts-column > div > div > div img {
+    width: 32px;
+    border-radius: 50%;
+    margin: 15px 15px 14px 17px;
+}
+
+.posts-column > div > img {
+    width: 612px;
+}
+
+.comments {
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.comments > a {
+    color: #8E8E8E;
+    font-weight: 400;
+    margin: 0 0 15px 17px; 
+}
+
+.comments p {
+    margin: 0 0 10px 5px;
+    font-weight: 400;
+}
+
+.comments > div a {
+    margin: 0 0 10px 17px;
+}
+
+.comments > div {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.comments ion-icon:hover {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.comments > div:last-child {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    margin-top: 17px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #DBDBDB;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.comments > div:last-child ion-icon {
+    font-size: 30px;
+    margin-left: 17px;
+}
+
+.comments input {
+    width: 100%;
+    height: 28px;
+    background-color: white;
+    color: #979797;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14.06px;
+    border: 0;
+}
+
+.comments > div input:last-child {
+    margin-right: 17px;
+    width: auto;
+    color: #B2DFFC;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 300ms;
+}
+
+.comments > div input:last-child:hover {
+    color:#0095F6;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    max-width: 612px;
+    max-height: 5000x;
+}
+
+#video {
+    background-color: #000000;
+    width: 612px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 293px;
+    margin-top: 23px;
+    overflow: visible;
+    position: fixed;
+    top: 88px; 
+    left: calc(50% + 171px);
+}
+
+.sidebar div {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar > div:first-child img {
+    width: 56px;
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+.sidebar > div:first-child div {
+    flex-direction: column;
+    align-items: baseline;
+
+}
+
+.sidebar p {
+    color: #8E8E8E;
+    font-weight: 400;
+}
+
+.sidebar a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+}
+
+.sidebar > div:first-child p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+}
+
+.sidebar > div:nth-child(2) {
+    margin: 22px 0 17px 0;
+    justify-content: space-between;
+}
+
+.sidebar > div:nth-child(2) p {
+    font-size: 12px;
+    font-weight: 500px;
+    line-height: 14.06px;
+}
+
+.sidebar > div:nth-child(2) a {
+    font-size: 12px;
+    line-height: 14.06px;
+}
+
+.sidebar > div:nth-child(3),
+.sidebar > div:nth-child(4),
+.sidebar > div:nth-child(5),
+.sidebar > div:nth-child(6),
+.sidebar > div:nth-child(7) {
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.sidebar > div:nth-child(3) > div img,
+.sidebar > div:nth-child(4) > div img,
+.sidebar > div:nth-child(5) > div img,
+.sidebar > div:nth-child(6) > div img,
+.sidebar > div:nth-child(7) > div img{
+    width: 32px;
+    border-radius: 50%; 
+    margin-right: 11px;    
+}
+
+.sidebar > div:nth-child(3) > div > div,
+.sidebar > div:nth-child(4) > div > div,
+.sidebar > div:nth-child(5) > div > div,
+.sidebar > div:nth-child(6) > div > div,
+.sidebar > div:nth-child(7) > div > div {
+    flex-direction: column;
+    align-items: baseline; 
+    justify-content: space-between;
+}
+
+.sidebar > div:nth-child(3) > div > div p,
+.sidebar > div:nth-child(4) > div > div p,
+.sidebar > div:nth-child(5) > div > div p,
+.sidebar > div:nth-child(6) > div > div p,
+.sidebar > div:nth-child(7) > div > div p {
+    font-size: 12px; 
+    color: #8E8E8E;
+    line-height: 16.41px;
+}
+
+.follow {
+    font-size: 12px;
+    font-weight: 500px;
+    line-height: 14.06px;
+    width: 41px;
+    color: #139EF2;
+}
+
+.follow:focus {
+    cursor: auto;
+    color: #000000;
+}
+
+
+.sidebar > div:nth-child(8) {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 33px;
+}
+
+.sidebar > div:nth-child(8) p,
+.sidebar > div:nth-child(8) a,
+.sidebar > div:nth-child(8) button,
+.sidebar > div:nth-child(9) p {
+    margin-right: 2px;
+    color: #C7C7C7;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12.89px;
+}
+
+.sidebar > div:nth-child(8) a:hover {
+    text-decoration: underline;
+}
+
+.sidebar > div:nth-child(9) {
+    margin-top: 18px;
+}
+
+.bottom-bar {
+    display: none;
+
+}
+
+/*viewport < 935xxpx*/
+
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        justify-content: center;
+    }
+}
+
+/*viewport < 614px*/
+
+@media (max-width: 614px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-mobile ion-icon {
+        font-size: 22px;
+        margin: 0 20px;
+    }
+
+    .menu-mobile img {
+        height: 29px;
+        width: auto;
+        margin-top: 15px;
+    }
+
+    .stories-box {
+        background-color: none;
+    }
+
+    .posts-column,
+    .post-column img,
+    #video {
+        width: 100%;
+    }
+
+    .bottom-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 54px;
+        background-color: #FFFFFF;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #DBDBDB;
+    }
+
+    .bottom-bar ion-icon {
+        font-size: 22px;
+        margin: 0 19px;
+        color: #000000;
+    }
+}
