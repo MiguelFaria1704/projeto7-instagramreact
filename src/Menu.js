@@ -1,10 +1,10 @@
 export default function Menu() {
     return (
-    <div class="menu">
+    <div className="menu">
         <div>
             <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
-            <div class="vertical-line"></div>
-            <a href="https://www.instagram.com/"><img src="./images/logo.png" /></a>
+            <div className="vertical-line"></div>
+            <a href="https://www.instagram.com/"><img src="./images/logo.png" alt="logo"/></a>
         </div>
 
         <div>

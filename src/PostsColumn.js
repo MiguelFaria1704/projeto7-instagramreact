@@ -1,3 +1,5 @@
+import React from "react";
+
 let posts = [
     {
         accountURl: "https://www.instagram.com/meowed/",
@@ -43,27 +45,68 @@ let posts = [
     }
 ]
 
-export default function PostsColumn() {
+
+export default function PostsColumn() {   
     return (
-        <div class="posts-column">
-            {posts.map(post => 
+        <div className="posts-column">
+            {posts.map(post => (
+                <Post
+                    accountURl={post.accountURl} 
+                    accountImage={post.accountImage} 
+                    account={post.account} 
+                    postImage={post.postImage} 
+                    interactingProfileImage={post.interactingProfileImage} 
+                    interactingProfileURL={post.interactingProfileURL} 
+                    interactingProfileName ={post.interactingProfileName} 
+                    interactingNumbers={post.interactingNumbers} 
+                    commentsNumber={post.commentsNumber} 
+                    commentAcountURL={post.commentAcountURL} 
+                    commentAcountName={post.commentAcountName} 
+                    commentText={post.commentText} 
+                />
+            ))}
+        </div>
+        );
+}
+
+
+function Post(props) {
+    const [heart, setHeart] = React.useState("heart-outline");
+    const [likeStatus, setLikeStatus] = React.useState("unliked");
+
+    function likeToggle() {
+        if(heart === "heart-outline") {
+            setHeart("heart-sharp");
+            setLikeStatus("liked");
+        } else {
+            setHeart("heart-outline");
+            setLikeStatus("unliked");
+        }
+    }
+
+    function likeAdd() {
+        setHeart("heart-sharp");
+        setLikeStatus("liked");
+    }
+    
+    return (
             <div>
                 <div>
                     <div>
-                        <a href={post.accountURl}>
-                            <img src={post.accountImage} alt="Profile Image" />
-                            <h1>{post.account}</h1>            
+                        <a href={props.accountURl}>
+                            <img src={props.accountImage} alt="Profile Image" />
+                            <h1>{props.account}</h1>            
                         </a>
                     </div>
 
                     <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
                 </div>
 
-                <img src={post.postImage} alt="Post Image" />
+                <img src={props.postImage} alt="Post Image" onClick={likeAdd} />
 
                 <div>
                     <div>
-                        <button><ion-icon name="heart-outline"></ion-icon></button>
+                        <button className={likeStatus} onClick={likeToggle}><ion-icon name={heart}></ion-icon></button>
                         <button><ion-icon name="chatbubble-outline"></ion-icon></button>
                         <button><ion-icon name="paper-plane-outline"></ion-icon></button>
                     </div>
@@ -71,15 +114,15 @@ export default function PostsColumn() {
                 </div>
 
                 <div>
-                    <img src={post.interactingProfileImage} alt="Profile interaction" />
-                    <p>Curtido por <a href={post.interactingProfileURL}>{post.interactingProfileName}</a> e <strong>outras {post.interactingNumbers} pessoas</strong></p>
+                    <img src={props.interactingProfileImage} alt="Profile interaction" />
+                    <p>Curtido por <a href={props.interactingProfileURL}>{props.interactingProfileName}</a> e <strong>outras {props.interactingNumbers} pessoas</strong></p>
                 </div>
 
-                <div class="comments">
-                    <a href="https://www.instagram.com/">Veja todos os {post.commentsNumber} comentários</a>
+                <div className="comments">
+                    <a href="https://www.instagram.com/">Veja todos os {props.commentsNumber} comentários</a>
 
                     <div>
-                        <div><a href={post.commentAcountURL}>{post.commentAcountName}</a><p>{post.commentText}</p></div>
+                        <div><a href={props.commentAcountURL}>{props.commentAcountName}</a><p>{props.commentText}</p></div>
                         <button><ion-icon name="heart-outline"></ion-icon></button>
                     </div>
 
@@ -89,7 +132,5 @@ export default function PostsColumn() {
                     </div>
                 </div>
             </div>
-            )}
-        </div>
-        );
+    );
 }

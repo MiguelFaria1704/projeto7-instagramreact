@@ -38,8 +38,8 @@ const stories = [
     {
         background: "./images/stories_background.jpg",
         url: "https://www.instagram.com/stories/filomoderna/",
-        image: "./images/accounts/respondeai.jpg",
-        account: "respondeai"
+        image: "./images/accounts/filomoderna.jpg",
+        account: "filomoderna"
     },
     {
         background: "./images/stories_background.jpg",
@@ -51,22 +51,30 @@ const stories = [
 
 export default function StoriesBox() {
     return (
-        <div class="stories-box">
+        <div className="stories-box">
             {stories.map(story => 
-                <div>
-                    <img src={story.background} />
-                    <div>
-                        <a href={story.url}>
-                            <img src={story.img} />
-                        </a>
-                    </div>
-                    <a href={story.url}>{story.account}</a>
-                </div>
+                <Story 
+                background={story.background}
+                url={story.url}
+                image={story.image}
+                account={story.account}
+                />
                 )}
             <button><ion-icon name="chevron-forward-circle"></ion-icon></button>
         </div>
     );
 }
 
-               
-            
+function Story(props) {
+    return (
+        <div>
+            <img src={props.background} />
+            <div>
+                <a href={props.url}>
+                    <img src={props.image} />
+                </a>
+            </div>
+            <a href={props.url}>{props.account}</a>
+        </div>
+    );
+}                        
