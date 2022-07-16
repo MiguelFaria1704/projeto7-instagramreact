@@ -2,7 +2,8 @@ const myProfile = {
     name: "Catana", 
     ig: "catanacomics", 
     URL: "https://www.instagram.com/catanacomics/", 
-    image: "./images/accounts/catanacomics.webp"};
+    image: "./images/accounts/catanacomics.webp"
+    };
 
 const suggestions = [
     {
@@ -40,13 +41,12 @@ const suggestions = [
 export default function Sidebar() {
     return (
         <div className="sidebar">
-            <div>
-                <a href={myProfile.URL}><img src={myProfile.image} alt="My profyle" /></a>
-                <div>
-                    <a href={myProfile.URL}>{myProfile.ig}</a>
-                    <p>{myProfile.name}</p>
-                </div>
-            </div>
+           <MyProfile
+                name={myProfile.name}
+                ig={myProfile.ig}
+                URL={myProfile.URL}
+                image={myProfile.image}
+           />
 
             <div>
                 <p>Sugestões para você</p>
@@ -90,6 +90,18 @@ export default function Sidebar() {
                 <p>© 2021 INSTAGRAM DO FACEBOOK</p>
             </div>
         </div>
+    );
+}
+
+function MyProfile(props) {
+    return (
+        <div>
+        <a href={props.URL}><img src={props.image} alt="My profyle" /></a>
+        <div>
+            <a href={props.URL}>{props.ig}</a>
+            <p>{props.name}</p>
+        </div>
+    </div>
     );
 }
 
